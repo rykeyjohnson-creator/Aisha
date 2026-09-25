@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03050D"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good evening,"
+            android:textColor="#A7B9FF"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aisha ✦"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your AI Voice Assistant"
+            android:textColor="#64DFFF"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9AA8C9"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_aisha_world">
+
+            <View
+                android:id="@+id/avatarPulse"
+                android:layout_width="305dp"
+                android:layout_height="305dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_glow_ring"/>
+
+            <ImageView
+                android:id="@+id/ivAisha"
+                android:layout_width="match_parent"
+                android:layout_height="355dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/aisha_avatar"
+                android:contentDescription="Aisha"/>
+
+            <TextView
+                android:id="@+id/tvSpeakingState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_card_premium"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:text="◉  Listening..."
+                android:textColor="#66E8FF"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/bg_card_premium"
+                android:text="☁  Weather&#10;28° Cloudy"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:background="@drawable/bg_card_premium"
+                android:text="●  Status&#10;Online"
+                android:textColor="#66E8FF"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:background="@drawable/bg_card_premium"
+                android:text="✦  Aisha&#10;AI Ready"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/boxResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="68dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card_premium"
+            android:padding="15dp"
+            android:text="Hi! I'm Aisha. I'm ready to help you."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_input">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Ask Aisha anything..."
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7180A4"
+                android:paddingLeft="17dp"
+                android:singleLine="true"/>
+
+            <FrameLayout
+                android:id="@+id/btnSendIcon"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bg_send_circle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="➤"
+                    android:textColor="#06101A"
+                    android:textSize="19sp"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/mic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:text="🎙  Speak"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/bg_button"
+                android:text="➤  Send"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/youtube"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:text="▶  YouTube"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/whatsapp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/bg_button"
+                android:text="●  WhatsApp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/weather"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_button"
+            android:text="☁  Live Weather"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/termux"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_button"
+            android:text=">_  Developer / Termux"
+            android:textAllCaps="false"
+            android:textColor="#72FFB6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="✦  Quick Commands"
+            android:textColor="#66E8FF"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/quickHi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:text="Hi Aisha"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/quickTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_button"
+                android:text="Time"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/quickCount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_button"
+                android:text="1–100"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mainMic"
+            android:layout_width="66dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_send_circle"
+            android:text="🎙"
+            android:textSize="21sp"/>
+    </LinearLayout>
+</ScrollView>
