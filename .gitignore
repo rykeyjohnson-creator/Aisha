@@ -2,3 +2,10 @@
 build/
 .gradle/
 .kotlin/
+
+local.properties
+nostr-classes.jar
+reya/
+reya_all_functions.txt
+reya_function_inventory.txt
+reya_remaining_functions.txt

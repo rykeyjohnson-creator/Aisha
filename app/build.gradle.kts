@@ -34,4 +34,5 @@ android {
 
 dependencies {
     implementation("androidx.core:core-ktx:1.15.0")
+    implementation("org.rust-nostr:nostr-sdk-kmp-android:0.44.8")
 }
